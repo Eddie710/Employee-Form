@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    #frm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        flex-direction: column;
+    }
+
+    #info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: lightblue;
+        border: 3px solid black;
+        width: 400px;
+        height: fit-content;
+        float: right;
+        margin-right: 30%;
+        margin-top: -60%;
+    }
+
+    #info > div{
+        margin-bottom: 10px;
+        margin-top: 5px;
+        border: 1px solid lightgrey;
+    }
+</style>
+
+
+<body>
+    <form id="frm">
+        <Legend>Employee Registration E-Form</Legend>
+        <label>First Name:</label>
+        <input type="text"id="first"><br><br>
+        <label>Last Name:</label>
+        <input id="last" type="text"><br><br>
+        <label>Age:</label>
+        <input id="age"type="number"><br><br>
+        <label>City Name:</label>
+        <input id="city" type="text"><br><br>
+        <label>State Name:</label>
+        <input id="state"type="text"><br><br>
+        <label>Country Name:</label>
+        <input id="cntry"type="text"><br><br>
+        <label>Zip Code:</label>
+        <input id="zip" type="number"><br><br>
+        <label>Salary:</label>
+        <input id="sal" type="number"><br><br>
+        <label>Job Title:</label>
+        <input id="jt" type="text"><br><br>
+        <label>Department Name:</label>
+        <input id="dept" type="text"><br><br>
+        <label>Years Worked:</label>
+        <input id="serve" type="num"><br><br>
+        <button onclick="cEmp(event)">Submit Information</button>
+    </form>
+
+    <div id="info">
+
+    </div>
+    <script src="./copy.js"></script>
+</body>
+</html>
